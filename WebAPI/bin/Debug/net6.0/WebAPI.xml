@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:WebAPI.Controllers.BookController.GetAvailableBooks">
+            <summary>
+            Das Abrufen von allen momentan verfügbaren (ergo nicht ausgeliehenen) Büchern
+            </summary>
+            <response code="200">Im Body die frei verfügbaren Bücher</response>
+            <response code="401">Token nicht valid oder nicht mitgesendet</response>
+            <response code="500">Server-Error! Vielleicht DB-Offline?</response>
+        </member>
+        <member name="M:WebAPI.Controllers.CustomerController.EmailAlreadyRegistered(System.String)">
+            <summary>
+            Check ob eine E-MailAdresse bereits vergeben ist
+            </summary>
+            <returns>true wenn bereits vergebsen sonst false</returns>
+        </member>
+        <member name="M:WebAPI.Controllers.CustomerController.RegisterCustomer(DTO.DTOCustomer,System.String)">
+            <summary>
+            Hier kannst du den Customer registrieren
+            </summary>
+            <param name="newCustomer">Collection History kann null oder leeres Array sein</param>
+            <param name="password">one lower; one upper; one special; one number; 8 chars min</param>
+            <response code="409">Email-adresse bereits vergeben</response>
+            <response code="400">Passwort stimmt nicht mit Richtlinie überein oder Übermittlungsfehler des Models</response>
+        </member>
+        <member name="M:WebAPI.Controllers.CustomerController.ChangePassword(System.String,System.String)">
+            <summary>
+            Call um das Passwort zu ändern
+            </summary>
+            <param name="oldPass">das aktuelle Passwort</param>
+            <param name="newPass">das neue Wunschpasswort</param>
+            <response code="200">Success -> hat geklappt</response>
+            <response code="400">neues Passwort entspricht nicht den Richtlinien</response>
+            <response code="401">token nicht valid</response>
+            <response code="403">Oldpass ist nicht das richtige aktuelle Kennwort</response>
+            <response code="409">aus dem übermittelten Token konnte kein USer gefunden werde</response>
+        </member>
+        <member name="M:WebAPI.Controllers.LoginController.LoginWithToken">
+            <summary>
+            "Autologin" - Login mittels Token
+            </summary>
+            <response code = "200">Success. DTOCustomer model im body</response>
+            <response code = "401">Token fehlt oder nicht authorisiert</response>
+            <response code = "403">Token entspricht nicht den Richtlinien (zB Rolle)</response>
+            <response code = "400">Mit dem token wurde kein user gefunden obwohl er valid wäre(?)</response>
+            <response code = "500">Server-Error. Mayday Mayday</response>
+        </member>
+        <member name="M:WebAPI.Controllers.LoginController.LoginWithData(System.String,System.String)">
+            <summary>
+            Login Call mit Benutzerdaten email und pass
+            </summary>
+            <returns>einen Token und einen DTOCustomer als Tuple</returns>
+            <response code="400">bad user data</response>
+            <response code="200">OK, returned Tuple(item1: token als string,
+            item2: DTOCustomer model</response>
+            <response code="500">Server-Error. Mayday</response>
+        </member>
+        <member name="M:WebAPI.Controllers.RentController.RentBook(System.Int32)">
+            <summary>
+            Call um ein Buch auszuleiben
+            </summary>
+            <param name="bookID">die Id des auszuleihenden books</param>
+            <response code="200">ok, im body kommt die aktuelle history des kunden mit</response>
+            <response code="401">Kein valider Token dabei</response>
+            <response code="409">Token ist angekommen, aber mit ihm wurde kein entsprechender user gefunden</response>
+            <response code="400">Das Buch ist mittlerweile nicht mehr verfügbar oder das Buch gibt es nicht</response>
+            <response code="500">Server-Error. Mayday</response>
+        </member>
+        <member name="M:WebAPI.Controllers.RentController.ReturnBook(System.Int32)">
+            <summary>
+            Call um ein Buch zu returnen
+            </summary>
+            <param name="rentId">die entsprechende RENT ID der Ausleihe</param>
+            <response code="200">OK, returned wird das Datetime dateofReturn, denn somit ist
+            das Model beim Client ident zur DB</response>
+            <response code="401">Kein valider Token</response>
+            <response code="400">Rent mit der übermittelten ID nicht vorhanden</response>
+            <response code="500">Server-Error. Mayday</response>
+        </member>
+    </members>
+</doc>

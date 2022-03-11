@@ -1,0 +1,14 @@
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/bin/Debug/net6.0/DAL.deps.json
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/bin/Debug/net6.0/DAL.runtimeconfig.json
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/bin/Debug/net6.0/DAL.dll
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/bin/Debug/net6.0/DAL.pdb
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.csproj.AssemblyReference.cache
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.AssemblyInfoInputs.cache
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.AssemblyInfo.cs
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.csproj.CoreCompileInputs.cache
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.dll
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/ref/DAL.dll
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.pdb
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/DAL.genruntimeconfig.cache
+/Users/Aldu/Desktop/WifiLib2022-main/DAL/obj/Debug/net6.0/refint/DAL.dll

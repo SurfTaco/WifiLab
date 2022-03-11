@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels = "clr-namespace:ClientApp.ViewModels"
+    x:DataType="viewmodels:LoginViewModel"
+    x:Class="ClientApp.Views.LoginView">
+    <ContentPage.Content>
+        <Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <StackLayout VerticalOptions="Center">
+            <Entry IsPassword="False"
+                   Text="{Binding MailAdress,Mode=TwoWay}"
+                   Placeholder="Mail-Adresse">
+            </Entry>
+            <Entry IsPassword="True" Placeholder="Passwort"
+                   x:Name="pw"></Entry>
+            </StackLayout>
+
+            <Button Grid.Row="1" Text="Anmelden"
+                    Command="{Binding Login}"
+                    CommandParameter="{Binding Source={x:Reference pw}, Path=Text}"></Button>
+
+            <Label Grid.Row="2">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Noch kein Account?"/>
+                        <Span Text="Registrieren"
+                              Style="{DynamicResource LinkStyle}">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Register}"/>
+                        </Span.GestureRecognizers>
+                            </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+            </Frame>
+    </ContentPage.Content>
+</ContentPage>

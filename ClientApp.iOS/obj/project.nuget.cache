@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "cepwCA9cyzGZu8JTBUSY7TrXNPj68jyZElDU1V1scI6wbaoeWrZVSDuiwRCdM0Jq0v5IXvVq3pd9egd2+j6HaQ==",
+  "success": true,
+  "projectFilePath": "/Users/Aldu/Desktop/WifiLib2022-main/ClientApp.iOS/ClientApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/Aldu/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/Aldu/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/Aldu/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/Aldu/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

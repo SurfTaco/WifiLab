@@ -1,0 +1,10 @@
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/bin/Debug/netstandard2.0/DTO.deps.json
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/bin/Debug/netstandard2.0/DTO.dll
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/bin/Debug/netstandard2.0/DTO.pdb
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/obj/Debug/netstandard2.0/DTO.csproj.AssemblyReference.cache
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/obj/Debug/netstandard2.0/DTO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/obj/Debug/netstandard2.0/DTO.AssemblyInfoInputs.cache
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/obj/Debug/netstandard2.0/DTO.AssemblyInfo.cs
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/obj/Debug/netstandard2.0/DTO.csproj.CoreCompileInputs.cache
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/obj/Debug/netstandard2.0/DTO.dll
+/Users/Aldu/Desktop/WifiLib2022-main/DTO/obj/Debug/netstandard2.0/DTO.pdb

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientApp.App">
+    <Application.Resources>
+        <!--#region Colors-->
+        <Color x:Key="White">#FFFFFF</Color>
+        <Color x:Key="MidGreen">#00CE52</Color>
+
+        <!--#endregion-->
+
+        <!--#region Brushes-->
+        <LinearGradientBrush x:Key="WhiteGreenVertical" StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="{StaticResource White}" Offset="0"/>
+            <GradientStop Color="{StaticResource MidGreen}" Offset="1"/>
+        </LinearGradientBrush>
+        <!--#endregion-->
+
+        <!--#region explicit styles-->
+        <Style TargetType="Label" x:Key="LinkStyle">
+            <Setter Property="TextDecorations" Value="Underline"/>
+            <Setter Property="TextColor" Value="{StaticResource White}"/>
+        </Style>
+        <!--#endregion-->
+
+        <!--#region implicit styles - die für alle targetControls-->
+        <Style TargetType="ContentPage">
+            <!--<Setter Property="BackgroundColor" Value="{StaticResource MidGreen}"/>-->
+            <Setter Property="Background" Value="{StaticResource WhiteGreenVertical}"/>
+        </Style>
+        <!--#endregion-->
+    </Application.Resources>
+</Application>
