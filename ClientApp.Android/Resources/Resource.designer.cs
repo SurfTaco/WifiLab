@@ -19485,7 +19485,7 @@ namespace ClientApp.Droid
 			public const int image_share_filepaths = 2131820544;
 			
 			// aapt resource value: 0x7F110001
-			public const int networkSecurityConfig = 2131820545;
+			public const int network_security_config = 2131820545;
 			
 			// aapt resource value: 0x7F110002
 			public const int standalone_badge = 2131820546;

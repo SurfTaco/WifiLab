@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted ="true">
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">upperdevelopment.at</domain>
+    </domain-config>
+</network-security-config>

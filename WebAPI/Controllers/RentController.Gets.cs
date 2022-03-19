@@ -47,17 +47,13 @@ namespace WebAPI.Controllers
             // TODO: Refactor - auslagern - code reuse
             // TODO: Refactor - Datenbankeffizienz
             // final check ob das Buch immer noch verfügbar ist
-            bool isBookStillAvailable =
-                await _context.Books
-                .Include(x => x.Rents)
-                .Where(x => x.Rents.All(
-                    x => x.DateOfReturn != null &&
-                    x.BookId == bookID))
-                .AnyAsync();
+            var book = await _context.Books
+                    .Include(x => x.Rents)
+                    .FirstOrDefaultAsync(x => x.Id == bookID);
 
-            // Falls buch mittlerweile doch schon vergeben
-            // -> Bad Request
-            if (!isBookStillAvailable)
+            bool bookIsNotAvailable = book.Rents.Any(x => x.DateOfReturn == null);
+
+            if (bookIsNotAvailable)
                 return BadRequest("Buch doch schon verliehen oder gar nicht vorhanden.");
 
             // Wenn wir hier sind ist alles ok

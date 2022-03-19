@@ -4,11 +4,13 @@
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/bin/Debug/netstandard2.0/ClientApp.pdb
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/bin/Debug/netstandard2.0/DTO.dll
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/bin/Debug/netstandard2.0/DTO.pdb
+/Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.csproj.AssemblyReference.cache
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.GeneratedMSBuildEditorConfig.editorconfig
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/Views/BaseView.xaml.g.cs
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/Views/LoginView.xaml.g.cs
+/Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/Views/RegistrationView.xaml.g.cs
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.AssemblyInfoInputs.cache
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.AssemblyInfo.cs
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.csproj.CoreCompileInputs.cache
@@ -17,5 +19,3 @@
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.dll
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ref/ClientApp.dll
 /Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.pdb
-/Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/ClientApp.csproj.AssemblyReference.cache
-/Users/Aldu/Desktop/WifiLib2022-main/ClientApp/obj/Debug/netstandard2.0/Views/RegistrationView.xaml.g.cs
